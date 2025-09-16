@@ -17,7 +17,7 @@ pipeline {
 
         stage('Run Tests') {
             steps {
-                sh '. venv/bin/activate && python3 -m unittest discover -s tests'
+                sh 'venv/bin/activate && python3 -m unittest discover -s tests'
             }
         }
 
